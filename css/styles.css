@@ -1,0 +1,235 @@
+:root {
+    --primary-text-color: #757575;
+    --button-hover: #188CE8;
+}
+
+body {
+    background-color: #FFFFFF;
+    color: #212121;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+}
+
+button {cursor: pointer;
+}
+
+/* Убираем подчёркивание у ссылок */
+a {
+    text-decoration: none;
+}
+
+/* Скрывает h2 в секции "Особенности" */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+/* Удаляет точки из списков */
+.list {
+    list-style: none;
+}
+
+/* Наведение курсора */
+.link:hover, .link:focus {
+    color: #2196F3;
+}
+
+/* Заголовки блоков на странице Home */
+h2 {
+    color: #212121;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+/* Кнопка */
+.main-button {
+    display: flex;
+    background-color: #2196F3;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+.inactive-button {
+    background-color: #F5F4FA;
+    color: #212121;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.active-button {
+    background-color: #2196F3;
+    color: #F5F4FA;
+}
+
+button:hover {
+    background-color: var(--button-hover);
+    color: #FFFFFF;
+}
+
+/* Логотипы */
+.logo-web-color {
+    color: #2196F3;
+}
+
+.logo-header {
+    color: #000000;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.logo-footer {
+    color: #FFFFFF;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+/* Шапка страницы */
+.site-nav {
+    color: #212121;
+    font-weight: 500;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.link {
+    color: #212121;;
+}
+
+.active-link {
+    color: #2196F3;
+}
+
+.contact-us-header {
+    color: #757575;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+/* Герой */
+.section-banner {
+    background-color: #2F303A;
+}
+
+.banner-text {
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Особенности */
+.section-title-list {
+    color: #212121;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.section-title-description {
+    color: var(--primary-text-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+/* Наша команда */
+.section-team {
+    background-color: #F5F4FA;
+}
+
+.worker-name {
+    color: #212121;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.profession {
+    color: var(--primary-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+/* Портфолио */
+
+.text-title {
+    color: #212121;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.text-title-under {
+    color: var(--primary-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+}
+
+/* Подвал */
+.footer {
+    background-color: #2F303A;
+}
+
+address {
+    font-style: normal;
+}
+
+.address-country {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.contact-us-footer {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}

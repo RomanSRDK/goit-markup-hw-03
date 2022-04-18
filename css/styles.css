@@ -13,6 +13,37 @@ body {
 button {cursor: pointer;
 }
 
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 2px solid aquamarine;
+}
+
+/* Отступы между секциями */
+.header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.section-features, .section-job, .section-portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+/* Reset css */
+h1, h2, h3, p {
+    margin: 0;
+}
+
+/* Адаптивная настройка изображения */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 /* Убираем подчёркивание у ссылок */
 a {
     text-decoration: none;
@@ -36,6 +67,8 @@ a {
 /* Удаляет точки из списков */
 .list {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 /* Наведение курсора */
@@ -55,7 +88,6 @@ h2 {
 
 /* Кнопка */
 .main-button {
-    display: flex;
     background-color: #2196F3;
     color: #ffffff;
     font-weight: 700;
@@ -64,6 +96,7 @@ h2 {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+    padding: 10px 32px;
 }
 
 .inactive-button {
@@ -74,6 +107,7 @@ h2 {
     line-height: 1.62;
     letter-spacing: 0.03em;
     text-align: center;
+    padding: 6px 22px;
 }
 
 .active-button {
@@ -120,7 +154,7 @@ button:hover {
 }
 
 .link {
-    color: #212121;;
+    color: #212121;
 }
 
 .active-link {
@@ -138,6 +172,8 @@ button:hover {
 /* Герой */
 .section-banner {
     background-color: #2F303A;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .banner-text {
@@ -171,6 +207,8 @@ button:hover {
 /* Наша команда */
 .section-team {
     background-color: #F5F4FA;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .worker-name {
@@ -212,6 +250,8 @@ button:hover {
 /* Подвал */
 .footer {
     background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 address {

@@ -22,10 +22,10 @@ button {
 }
 
 /* Отступы между секциями */
-.header {
-    padding-top: 24px;
-    padding-bottom: 24px;
-    border-bottom: 1px solid #ECECEC;
+.nav {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-left: 93px;
 }
 
 .section-features, .section-job, .section-portfolio {
@@ -163,8 +163,8 @@ button:hover {
     margin-left: auto;
 }
 
-.nav {
-    margin-left: 93px;
+.header {
+    border-bottom: 1px solid #ECECEC;
 }
 
 .site-nav {
@@ -272,6 +272,7 @@ button:hover {
     width: 270px;
     margin-left: 30px;
 }
+
 .peculiar-properties:last-child {
     margin-left: 0;
 }

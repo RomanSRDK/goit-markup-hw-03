@@ -22,15 +22,22 @@ button {
 }
 
 /* Отступы между секциями */
-.nav {
+.header-container {
     padding-top: 32px;
     padding-bottom: 32px;
+}
+
+.nav {
     margin-left: 93px;
 }
 
-.section-features, .section-job, .section-portfolio {
+.section-job, .section-portfolio {
     padding-top: 94px;
     padding-bottom: 94px;
+}
+
+.section-features {
+    padding-top: 94px;
 }
 
 .footer {
@@ -273,7 +280,7 @@ button:hover {
     margin-left: 30px;
 }
 
-.peculiar-properties:last-child {
+.peculiar-properties:first-child {
     margin-left: 0;
 }
 
@@ -345,12 +352,12 @@ button:hover {
 .projects-box-list {
     width: 370px;
     background-color: #FFFFFF;
-    border: 1px solid #EEEEEE;
     box-sizing: border-box;
 }
 
 .portfolio-list {
-padding: 20px 24px;
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
 }
 
 .text-title {
@@ -392,13 +399,17 @@ address {
     letter-spacing: 0.03em;
 }
 
-.address-block {
-    margin-top: 20px;
+.address-list {
+    margin-bottom: 9px;
+    display: block;
 }
 
-.address-list {
-    padding-bottom: 9px;
-}
 .address-list:last-child {
-    padding-bottom: 0;
+    margin-bottom: 0;
 }
+
+.footer .logo-footer{
+    margin-bottom: 20px;
+    margin-right: 0;
+    display: block;
+ }

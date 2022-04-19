@@ -10,26 +10,33 @@ body {
     font-style: normal;
 }
 
-button {cursor: pointer;
+button {
+    cursor: pointer;
 }
 
 .container {
     width: 1200px;
     padding: 0 15px;
-    margin-left: auto;
-    margin-right: auto;
-    outline: 2px solid aquamarine;
+    margin: 0 auto;
+    /* outline: 2px solid aquamarine; */
 }
 
 /* Отступы между секциями */
 .header {
     padding-top: 24px;
-    padding-bottom: 25px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .section-features, .section-job, .section-portfolio {
     padding-top: 94px;
     padding-bottom: 94px;
+}
+
+.footer {
+    background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 /* Reset css */
@@ -84,23 +91,13 @@ h2 {
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
 }
 
-/* Кнопка */
-.main-button {
-    background-color: #2196F3;
-    color: #ffffff;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    padding: 10px 32px;
-}
-
+/* Кнопки */
 .inactive-button {
     background-color: #F5F4FA;
+    border-radius: 4px;
     color: #212121;
     font-weight: 500;
     font-size: 16px;
@@ -108,12 +105,24 @@ h2 {
     letter-spacing: 0.03em;
     text-align: center;
     padding: 6px 22px;
+    border: none;
 }
 
 .active-button {
     background-color: #2196F3;
     color: #F5F4FA;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+
+.button-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.button-list .item:not(:last-child) {
+    margin-right: 8px;
+ }
 
 button:hover {
     background-color: var(--button-hover);
@@ -144,13 +153,43 @@ button:hover {
 }
 
 /* Шапка страницы */
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-group {
+    margin-left: auto;
+}
+
+.nav {
+    margin-left: 93px;
+}
+
 .site-nav {
+    display: flex;
+    align-items: center;
     color: #212121;
     font-weight: 500;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+}
+
+.header-group .header-group-list:not(:last-child) {
+    margin-right: 50px;
+}
+
+.site-nav .nav-list:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header-group {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
 }
 
 .link {
@@ -174,6 +213,7 @@ button:hover {
     background-color: #2F303A;
     padding-top: 200px;
     padding-bottom: 200px;
+    text-align: center;
 }
 
 .banner-text {
@@ -184,9 +224,32 @@ button:hover {
     letter-spacing: 0.06em;
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 696px;
+}
+
+.main-button {
+    border-radius: 4px;
+    background-color: #2196F3;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    padding: 10px 32px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* Особенности */
+.peculiar-properties-list {
+    display: flex;
+}
+
 .section-title-list {
     color: #212121;
     font-weight: 700;
@@ -194,6 +257,7 @@ button:hover {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .section-title-description {
@@ -204,11 +268,47 @@ button:hover {
     letter-spacing: 0.03em;
 }
 
+.peculiar-properties {
+    width: 270px;
+    margin-left: 30px;
+}
+.peculiar-properties:last-child {
+    margin-left: 0;
+}
+
+/* Чем мы занимаемся */
+.job-list {
+    display: flex;
+}
+
+.job-list .job-list-image:not(:last-child) {
+    margin-right: 30px;
+}
+
+.job-list-image {
+    mix-blend-mode: normal;
+}
+
 /* Наша команда */
 .section-team {
     background-color: #F5F4FA;
     padding-top: 94px;
     padding-bottom: 94px;
+}
+
+.team-catalog {
+    display: flex;
+}
+
+.team-catalog .team-catalog-list:not(:last-child) {
+    margin-right: 30px;
+}
+
+.team-catalog-list {
+    width: 270px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .worker-name {
@@ -217,6 +317,7 @@ button:hover {
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
+    margin-bottom: 10px;
     text-align: center;
 }
 
@@ -229,7 +330,27 @@ button:hover {
     text-align: center;
 }
 
+.worker-name-profession {
+    padding: 30px 30px;
+}
+
 /* Портфолио */
+.projects-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.projects-box-list {
+    width: 370px;
+    background-color: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+}
+
+.portfolio-list {
+padding: 20px 24px;
+}
 
 .text-title {
     color: #212121;
@@ -237,6 +358,7 @@ button:hover {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-bottom: 4px;
 }
 
 .text-title-under {
@@ -248,11 +370,6 @@ button:hover {
 }
 
 /* Подвал */
-.footer {
-    background-color: #2F303A;
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
 
 address {
     font-style: normal;
@@ -272,4 +389,15 @@ address {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+}
+
+.address-block {
+    margin-top: 20px;
+}
+
+.address-list {
+    padding-bottom: 9px;
+}
+.address-list:last-child {
+    padding-bottom: 0;
 }

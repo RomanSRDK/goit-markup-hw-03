@@ -22,13 +22,10 @@ button {
 }
 
 /* Отступы между секциями */
-.header-container {
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
-
 .nav {
     margin-left: 93px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .section-job, .section-portfolio {
@@ -102,7 +99,33 @@ h2 {
 }
 
 /* Кнопки */
-.inactive-button {
+
+.main-button {
+    border-radius: 4px;
+    background-color: #2196F3;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    padding: 10px 32px;
+    border: none;
+}
+
+.main-button:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: var(--button-hover);
+}
+
+.button-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.portfolio-button {
     background-color: #F5F4FA;
     border-radius: 4px;
     color: #212121;
@@ -115,25 +138,11 @@ h2 {
     border: none;
 }
 
+.portfolio-button:hover,
 .active-button {
     background-color: #2196F3;
-    color: #F5F4FA;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.button-list {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-}
-
-.button-list .item:not(:last-child) {
-    margin-right: 8px;
- }
-
-button:hover {
-    background-color: var(--button-hover);
     color: #FFFFFF;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Логотипы */
@@ -237,21 +246,6 @@ button:hover {
     width: 696px;
 }
 
-.main-button {
-    border-radius: 4px;
-    background-color: #2196F3;
-    color: #ffffff;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    padding: 10px 32px;
-    border: none;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
 /* Особенности */
 .peculiar-properties-list {
     display: flex;
@@ -343,6 +337,10 @@ button:hover {
 }
 
 /* Портфолио */
+.button-list .item:not(:last-child) {
+    margin-right: 8px;
+ }
+
 .projects-box {
     display: flex;
     flex-wrap: wrap;
@@ -355,9 +353,13 @@ button:hover {
     box-sizing: border-box;
 }
 
+.projects-box-list:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .portfolio-list {
     padding: 20px 24px;
-    border: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
 }
 
 .text-title {
